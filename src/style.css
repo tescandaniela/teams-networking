@@ -3,7 +3,7 @@ html {
 }
 
 h1 {
-  color: darkolivegreen;
+  color: rgb(56, 89, 0);
   margin: 5px 0;
 }
 
@@ -46,7 +46,7 @@ section {
 #myimg img {
   border-radius: 50%;
   border: 4px solid white;
-  background-color: darkolivegreen;
+  background-color: rgb(32, 48, 5);
 }
 
 #header-info {
