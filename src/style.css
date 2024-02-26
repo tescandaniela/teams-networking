@@ -55,12 +55,32 @@ section {
   text-shadow: 1px 1px 2px #0000;
 }
 
-table {
+section {
+  padding: 15px;
+}
+
+#teamsTable {
   width: 100%;
+  border-collapse: collapse;
 }
 
 footer {
   background-color: bisque;
   text-align: center;
   padding: 5;
+}
+
+#teamsTable th,
+#teamsTable td {
+  border: 1px solid #057988;
+  padding: 5px;
+}
+
+#teamsTable th {
+  background-color: #0798ab;
+  color: whitesmoke;
+}
+
+#teamsTable tr:nth-child (even) {
+  background-color: #f2f2f2;
 }
