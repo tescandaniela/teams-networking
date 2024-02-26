@@ -81,6 +81,6 @@ footer {
   color: whitesmoke;
 }
 
-#teamsTable tr:nth-child (even) {
+#teamsTable tr:nth-child(even) {
   background-color: #f2f2f2;
 }
