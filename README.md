@@ -2,13 +2,11 @@
 
 ## start project
 
-```sh
+````sh
 
-cd ../node-api
-
-npm start
-```
+cd ../node-api $$ npm start
+# or
 
 ```sh
 npm start
-```
+````
