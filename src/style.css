@@ -63,15 +63,10 @@ section {
   width: 100%;
   border-collapse: collapse;
 }
-#teamsTable tfoot input [type="text"] {
-  border-collapse: collapse;
-  width: 100%;
-}
 
-footer {
-  background-color: bisque;
-  text-align: center;
-  padding: 5;
+#teamsTable tfoot input [type="text"] {
+  box-sizing: border-box;
+  width: 100%;
 }
 
 #teamsTable th,
@@ -87,4 +82,10 @@ footer {
 
 #teamsTable tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+footer {
+  background-color: bisque;
+  text-align: center;
+  padding: 5;
 }
