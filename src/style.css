@@ -63,6 +63,10 @@ section {
   width: 100%;
   border-collapse: collapse;
 }
+#teamsTable tfoot input [type="text"] {
+  border-collapse: collapse;
+  width: 100%;
+}
 
 footer {
   background-color: bisque;
