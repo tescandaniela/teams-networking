@@ -99,14 +99,13 @@ function onSubmit(e) {
       }
     });
   } else {
-    const req = createTeamRequest;
-    const reponse = req.then(r => r.json());
-    response.then(status => {
-      if (status.success) {
-        window.location.reload();
-      }
-    });
-    window.location.reload();
+    createTeamRequest(team)
+      .then(r => r.json())
+      .then(status => {
+        if (status.success) {
+          window.location.reload();
+        }
+      });
   }
 }
 
