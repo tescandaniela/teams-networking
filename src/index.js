@@ -8,7 +8,7 @@ function $(selector) {
 }
 
 function createTeamRequest(team) {
-  fetch("http://localhost:3000/teams-json/create", {
+  return fetch("http://localhost:3000/teams-json/create", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -18,7 +18,7 @@ function createTeamRequest(team) {
 }
 
 function deleteTeamRequest(id) {
-  fetch("http://localhost:3000/teams-json/delete", {
+  return fetch("http://localhost:3000/teams-json/delete", {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json"
@@ -94,12 +94,18 @@ function onSubmit(e) {
     const response = req.then(r => r.json());
     response.then(status => {
       console.warn("status", status);
-      if (status.succes) {
+      if (status.success) {
         window.location.reload();
       }
     });
   } else {
-    createTeamRequest(team);
+    const req = createTeamRequest;
+    const reponse = req.then(r => r.json());
+    response.then(status => {
+      if (status.success) {
+        window.location.reload();
+      }
+    });
     window.location.reload();
   }
 }
